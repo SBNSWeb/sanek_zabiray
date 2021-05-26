@@ -8,6 +8,7 @@
       <v-sheet
         :color="color"
         height="100%"
+        width=""
         tile
       >
         <v-row

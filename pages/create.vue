@@ -12,26 +12,24 @@
                 </h3>
                 <v-flex>
                   <!--картинку нвхуй-->
-                  <!-- 
-                    <v-img :alt="platformName" class="ml-3" contain height="48px" position="center right" src="https://www.mobygames.com/images/i/12/25/1435075.png"></v-img>
-                  -->
+                  <v-img :alt="platformName" class="ml-3" contain height="48px" position="center right" src="https://www.mobygames.com/images/i/12/25/1435075.png"></v-img>
                 </v-flex>
               </v-layout>
             </v-card-title>
             <v-divider></v-divider>
             <v-card-text>
               <!--войди туда сюда-->
-              <p>Водите в ваш аккаунт:</p>
+              <p>Sign in with your username and password:</p>
               <v-form>
                 <v-text-field
                               outline
-                              label="Имя пользователя"
+                              label="Username"
                               type="text"
                               v-model="username"></v-text-field>
                 <v-text-field
                               outline
                               hide-details
-                              label="Пароль"
+                              label="Password"
                               type="password"
                               v-model="password"></v-text-field>
               </v-form>
@@ -39,20 +37,19 @@
             <v-divider></v-divider>
             <v-card-actions :class="{ 'pa-3': $vuetify.breakpoint.smAndUp }">
               <!--убрать форгот пасс-->
-              <!-- <v-btn color="info" flat>
+              <v-btn color="info" flat>
                 Forgot password?
               </v-btn>
               <v-spacer></v-spacer>
-              -->
               <v-btn color="info" :large="$vuetify.breakpoint.smAndUp">
-                <v-icon left>Login</v-icon>
-                
+                <v-icon left>lock</v-icon>
+                Login
               </v-btn>
             </v-card-actions>
           </v-card>
         </v-flex>
         <v-flex sm12 md6 offset-md3>
-        <!--
+          <!--убрать-->
           <v-layout align-center justify-space-between>
             <p class="caption my-3">
               <a href="#">Privacy Policy</a>
@@ -60,17 +57,22 @@
               <a href="#">Terms of Service</a>
             </p>
             <p class="caption my-3">Powered by <a href="#">StaffCircle</a></p>
-          </v-layout>-->
-        </v-flex> 
+          </v-layout>
+        </v-flex>
       </v-layout>
     </v-container>
   </v-app>
 </template>
 
 <script>
-
+ export default{}
 </script>
 
 <style>
 
 </style>
+
+
+
+
+<!--формы назв описание дивизион (1й 2й 3й) --> 

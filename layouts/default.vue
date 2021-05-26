@@ -89,7 +89,7 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-apps',
           title: 'Команды',
           to: '/inspire'
         },
@@ -103,6 +103,11 @@ export default {
           title:'Войти',
           to:'/auth'
         },
+        {
+          icon:'mdi-apps',
+          title:'Cоздать команду',
+          to:'/create'
+        }
       ],
       links: [
         'Home',
