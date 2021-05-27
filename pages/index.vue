@@ -20,12 +20,27 @@
 
         >
           <div class="display-3">
-            <img src="https://u-stena.ru/upload/iblock/526/5269612cdf011df68e0cbcd639ba0129.jpg" alt="">
+            <img src="https://u-stena.ru/upload/iblock/526/5269612cdf011df68e0cbcd639ba0129.jpg" alt=""> {{i+1}}
           </div>
         </v-row>
       </v-sheet>
     </v-carousel-item>
   </v-carousel>
+<!--
+    <div id="app">
+    <v-app id="inspire">
+      <v-carousel>
+        <v-carousel-item
+          v-for="(item,i) in items"
+          :key="i"
+          :src="item.src"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        ></v-carousel-item>
+      </v-carousel>
+    </v-app>
+  </div>
+-->
   <h1>Main Division</h1>
   <v-simple-table class="mt-3">
     <template v-slot:default>
@@ -72,6 +87,7 @@
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
+
 export default {
   components: {
     Logo,
@@ -80,22 +96,7 @@ export default {
   //json cюда
   data: () =>  ({
       model: 0,
-
-      //colors: [
-      //    {
-      //      src: 'https://mediasat.info/wp-content/uploads/2019/07/Goal-Soccer.jpg',
-      //    },
-      //    {
-      //      src: 'https://mediasat.info/wp-content/uploads/2019/07/Goal-Soccer.jpg',
-      //    },
-      //    {
-      //      src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
-      //    },
-      //    {
-      //      src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
-      //    },
-      //],
-
+      
       colors:[
         '<img src="https://i.ytimg.com/vi/YDPWXnBudA0/maxresdefault.jpg" alt="">',
         'green',
@@ -103,6 +104,7 @@ export default {
         'red',
         'orange',
       ],
+      
 
         desserts: [
           {
@@ -133,4 +135,5 @@ export default {
         show: false,
     }),
 }
+
 </script>

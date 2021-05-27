@@ -85,7 +85,8 @@ export default {
       drawer: false,
       items: [
         {
-          icon: '/logo-delta.png',
+          //icon: '/logo-delta.png',
+          icon: 'mdi-apps',
           title: 'Главная',
           to: '/'
         },
