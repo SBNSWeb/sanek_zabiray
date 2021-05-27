@@ -12,8 +12,9 @@
           <v-list-item-title class="title">
             Name of league
           </v-list-item-title>
+          
           <v-list-item-subtitle>
-            season num
+            Season num
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -84,7 +85,7 @@ export default {
       drawer: false,
       items: [
         {
-          icon: 'mdi-apps',
+          icon: '/logo-delta.png',
           title: 'Главная',
           to: '/'
         },
