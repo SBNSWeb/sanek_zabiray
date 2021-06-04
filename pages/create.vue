@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 
   <v-app :class="{ 'pa-3': $vuetify.breakpoint.smAndUp }" :dark="darkTheme" id="inspire">
     <v-container>
@@ -73,3 +74,13 @@
 <style>
 
 </style>
+=======
+    
+</template>
+
+<script>
+export default {
+    
+}
+</script>
+>>>>>>> 6866de6fb0c3e3f35a4105791f18b8e6fdd2034b

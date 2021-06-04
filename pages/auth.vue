@@ -44,9 +44,8 @@
               </v-btn>
               <v-spacer></v-spacer>
               -->
-              <v-btn color="info" :large="$vuetify.breakpoint.smAndUp">
+             <v-btn color="info" :large="$vuetify.breakpoint.smAndUp" @click='getToken()'>
                 <v-icon left>Login</v-icon>
-                
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -77,7 +76,11 @@ export default{
   },
   methods:{
     getToken(){
+<<<<<<< HEAD
       this.$axios({
+=======
+      this.axios({
+>>>>>>> 6866de6fb0c3e3f35a4105791f18b8e6fdd2034b
         method: 'post',
         url:'/auth',
         data:{

@@ -107,7 +107,11 @@ export default {
         },
         {
           icon:'mdi-apps',
+<<<<<<< HEAD
           title:'Cоздать команду',
+=======
+          title:'Create team',
+>>>>>>> 6866de6fb0c3e3f35a4105791f18b8e6fdd2034b
           to:'/create'
         }
       ],
